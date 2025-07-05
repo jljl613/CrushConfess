@@ -133,6 +133,22 @@
       gap: 20px;
       flex-wrap: wrap;
     }
+    .exit-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.exit-btn:hover {
+  background-color: #e91e63;
+}
+
   </style>
 </head>
 <body>
@@ -152,10 +168,17 @@
         <img src="https://media.tenor.com/QUFOQXsCouEAAAAm/pengu-pudgy.webp" alt="Pengu Pudgy" class="crush-img">
         <img src="https://media.tenor.com/56wL0c6s-LEAAAAm/i-love-you-iloveyou.webp" alt="I love you bunny" class="crush-img">
       </div>
+      <button class="exit-btn" onclick="exitPage()">Exit 💨</button>
     </div>
   </div>
 
   <script>
+    
+function exitPage() {
+  window.location.href = "https://www.google.com";
+}
+
+
     const noBtn = document.getElementById('noBtn');
     const modal = document.getElementById('modal');
 
